@@ -8,6 +8,7 @@
 - `kapcsolat.html` – kapcsolat
 - `szerkeszto.html` – egyszerű vizuális tartalomszerkesztő
 - `styles.css`, `app.js`, `editor.js`, `content.js` – stílusok, működés és tartalom
+- `nrg-logo.png` – az eredeti, feltöltött NRG Services Kft. logó
 
 ## Helyi megtekintés
 Nyisd meg az `index.html` fájlt böngészőben. Az online Google Fonts és Unsplash hero-fotó internetkapcsolatot igényel.
