@@ -6,6 +6,11 @@
  let html='<div class="editor-group"><h3>Főoldal és bemutatkozás</h3>';
  html+=field('Szlogen','tagline',c.tagline)+field('Főcím','heroTitle',c.heroTitle)+field('Bevezető szöveg','heroText',c.heroText,true)+field('Gomb felirata','heroButton',c.heroButton)+field('Rólunk cím','aboutTitle',c.aboutTitle)+field('Rólunk szöveg','aboutText',c.aboutText,true)+'</div>';
  html+='<div class="editor-group"><h3>Kapcsolati adatok</h3>'+field('Telefon','phone',c.phone)+field('E-mail','email',c.email)+field('Cím','address',c.address)+'</div>';
+
+ html+='<div class="editor-group"><h3>Vállalati eredmények</h3>';
+ (c.stats||[]).forEach((s,i)=>{html+=`<h3 style="font-size:16px;margin-top:20px">Mutató ${i+1}</h3>`+field('Érték',`stats.${i}.value`,s.value)+field('Mértékegység',`stats.${i}.unit`,s.unit)+field('Megnevezés',`stats.${i}.label`,s.label)+field('Rövid leírás',`stats.${i}.description`,s.description,true)});
+ html+='</div>';
+
  html+='<div class="editor-group"><h3>Szolgáltatások</h3>';
  (c.services||[]).forEach((s,i)=>{html+=`<h3 style="font-size:16px;margin-top:20px">Szolgáltatás ${i+1}</h3>`+field('Megnevezés',`services.${i}.title`,s.title)+field('Leírás',`services.${i}.text`,s.text,true)});
  html+='</div><div class="editor-group"><h3>Referenciák</h3>';

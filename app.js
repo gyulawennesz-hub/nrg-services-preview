@@ -3,6 +3,18 @@
  const c=window.NRG_CONTENT||{};
  document.querySelectorAll('[data-content]').forEach(el=>{const k=el.getAttribute('data-content');if(c[k]!==undefined)el.textContent=c[k]});
  document.querySelectorAll('[data-content-href]').forEach(el=>{const k=el.getAttribute('data-content-href');if(c[k])el.href=(k==='email'?'mailto:':k==='phone'?'tel:':'')+c[k].replace(/\s/g,'')});
+
+ const statsRoot=document.getElementById('company-stats');
+ if(statsRoot){
+   const statIcons=['▦','☷','ϟ','♧'];
+   statsRoot.innerHTML=(c.stats||[]).map((s,i)=>`<article class="stat-card">
+     <div class="stat-icon" aria-hidden="true">${statIcons[i%statIcons.length]}</div>
+     <div class="stat-value">${s.value}<span>${s.unit}</span></div>
+     <h3>${s.label}</h3>
+     <p>${s.description}</p>
+   </article>`).join('');
+ }
+
  const serviceCard=(s,i)=>`<article class="service-card"><div class="service-icon">${['⌁','⌂','↗','✳','◌','⌖','⌘','↝'][i%8]}</div><h3>${s.title}</h3><p>${s.text}</p></article>`;
  const refCard=(r,i)=>`<article class="ref-card"><div class="ref-number">NRG / ${String(i+1).padStart(2,'0')}</div><h3>${r.name}</h3><p>${r.text}</p></article>`;
  const homeS=document.getElementById('home-services'); if(homeS)homeS.innerHTML=(c.services||[]).slice(0,4).map(serviceCard).join('');

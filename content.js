@@ -9,6 +9,32 @@ window.NRG_CONTENT = {
   "phone": "+36 96 312 881",
   "email": "info@nrgservices.hu",
   "address": "9024 Győr, Baráti út 1.",
+  "stats": [
+  {
+    "value": "1 020 000",
+    "unit": "db",
+    "label": "Beépített napelemek száma",
+    "description": "Nagyságrendileg ennyi napelemet építettünk ügyfeleink nagy megelégedésére."
+  },
+  {
+    "value": "3 750",
+    "unit": "db",
+    "label": "Projektek száma",
+    "description": "Működésünk során lezárt projektek száma."
+  },
+  {
+    "value": "380 000",
+    "unit": "MWh",
+    "label": "Megtermelt villamos energia",
+    "description": "A rendszereink által megtermelt energia mennyisége."
+  },
+  {
+    "value": "7 000",
+    "unit": "db",
+    "label": "Ügyfeleink száma",
+    "description": "Elégedett magán- és intézményi, vállalati ügyfeleink száma."
+  }
+],
   "services": [
     {
       "title": "Energiatároló rendszerek",

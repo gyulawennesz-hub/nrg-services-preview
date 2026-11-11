@@ -1,0 +1,15 @@
+NRG Services – statisztikai szekció frissítés
+
+A csomag a jelenlegi logós és mobiloptimalizált weboldal teljes fájlkészletét tartalmazza,
+kiegészítve a főoldali statisztikai blokkal és a vizuális szerkesztőben szerkeszthető mutatókkal.
+
+Feltöltés:
+1. Csomagold ki a ZIP-et.
+2. GitHub repository: gyulawennesz-hub/nrg-services-preview
+3. Add file → Upload files.
+4. A ZIP-BEN TALÁLHATÓ ÖSSZES FÁJLT töltsd fel a repository gyökérkönyvtárába.
+5. Engedélyezd a meglévő fájlok felülírását, majd Commit changes.
+6. A Render automatikusan deployol.
+
+A mutatók a szerkesztőben a „Vállalati eredmények” csoportban szerkeszthetők.
+A jelenlegi számok a felhasználó által megerősített, jelenleg is közzétett weboldali adatok.
